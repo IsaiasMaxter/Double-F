@@ -1,90 +1,386 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DobloF - Lavagem de Carros</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doblof | Lava Car & Agendamentos</title>
+  <meta name="description" content="Doblof - Lava car profissional. Agende online lavagem completa, detalhamento, cristalização e mais.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='120' fill='%2300D4FF'/%3E%3Ctext x='50%' y='55%' text-anchor='middle' font-size='120' font-family='Arial' fill='white'%3ED%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header / Navbar -->
   <header class="header">
-    <div class="logo">DobloF</div>
-    <nav class="nav">
-      <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#contact">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-logo" aria-hidden="true">🚗</span>
+        <span class="brand-text">Doblof</span>
+      </a>
+
+      <nav class="menu" aria-label="Principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#como">Como trabalhamos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#planos">Planos</a>
+        <a href="#agendar" class="btn btn-primary">Agendar</a>
+      </nav>
+
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Lavagem Premium para o Seu Carro</h1>
-      <p>Cuidamos do seu veículo com excelência e atenção aos detalhes.</p>
-      <a href="#services" class="btn">Conheça Nossos Serviços</a>
-    </div>
-    <div class="hero-img">
-      <img src="assets/hero-car.png" alt="Carro Limpo">
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Seu carro impecável com a <span class="gradient">Doblof</span></h1>
+        <p>Lavagem profissional, detalhamento e proteção para valorizar seu veículo. Agende online em poucos cliques.</p>
+        <div class="hero-cta">
+          <a href="#agendar" class="btn btn-primary btn-lg">Agendar agora</a>
+          <a href="#servicos" class="btn btn-ghost">Conhecer serviços</a>
+        </div>
+        <ul class="badges">
+          <li>✓ Atendimento com hora marcada</li>
+          <li>✓ Produtos premium e ecológicos</li>
+          <li>✓ Satisfação garantida</li>
+        </ul>
+      </div>
+
+      <figure class="hero-media">
+        <img loading="eager" alt="Lavagem profissional de carro com espuma" 
+             src="https://images.unsplash.com/photo-1620891549027-942fdc95b9f9?q=80&w=1400&auto=format&fit=crop" />
+        <figcaption>Cuidado de ponta a ponta</figcaption>
+      </figure>
     </div>
   </section>
 
   <!-- Serviços -->
-  <section id="services" class="services">
-    <h2>Nossos Serviços</h2>
-    <div class="services-container">
-      <div class="card">
-        <img src="assets/service1.png" alt="Lavagem Completa">
-        <h3>Lavagem Completa</h3>
-        <p>Exterior e interior, deixando seu carro impecável.</p>
-      </div>
-      <div class="card">
-        <img src="assets/service2.png" alt="Polimento">
-        <h3>Polimento</h3>
-        <p>Restaure o brilho original da pintura.</p>
-      </div>
-      <div class="card">
-        <img src="assets/service3.png" alt="Higienização">
-        <h3>Higienização</h3>
-        <p>Elimine odores e sujeiras internas.</p>
+  <section class="section" id="servicos">
+    <div class="container">
+      <header class="section-head">
+        <h2>Nossos serviços</h2>
+        <p>Escolha a experiência ideal para seu carro.</p>
+      </header>
+
+      <div class="grid cards">
+        <article class="card">
+          <img alt="Lavagem externa" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" />
+          <div class="card-body">
+            <h3>Lavagem Express</h3>
+            <p>Exterior + rodas + pretinho. Perfeito para o dia a dia.</p>
+            <ul class="list">
+              <li>Espuma neutra</li>
+              <li>Secagem com microfibra</li>
+              <li>Acabamento rápido</li>
+            </ul>
+            <div class="price">R$ 49</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img alt="Higienização interna" src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1200&auto=format&fit=crop" />
+          <div class="card-body">
+            <h3>Higienização Interna</h3>
+            <p>Interiores renovados: aspiração, painéis e higienização de ar.</p>
+            <ul class="list">
+              <li>Vácuo detalhado</li>
+              <li>Limpeza de painéis</li>
+              <li>Higienização do AC</li>
+            </ul>
+            <div class="price">R$ 129</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img alt="Detalhamento automotivo" src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format&fit=crop" />
+          <div class="card-body">
+            <h3>Detalhamento Premium</h3>
+            <p>Brilho profundo e proteção. Ideal para quem ama o carro.</p>
+            <ul class="list">
+              <li>Descontaminação</li>
+              <li>Polimento de brilho</li>
+              <li>Selante sintético</li>
+            </ul>
+            <div class="price">R$ 349</div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Sobre -->
-  <section id="about" class="about">
-    <div class="about-text">
-      <h2>Sobre Nós</h2>
-      <p>
-        A DobloF é especializada em lavagem automotiva de alta qualidade,
-        utilizando produtos premium e técnicas modernas para garantir a satisfação de cada cliente.
-      </p>
-    </div>
-    <div class="about-img">
-      <img src="assets/about.png" alt="Equipe DobloF">
+  <!-- Como trabalhamos -->
+  <section class="section alt" id="como">
+    <div class="container">
+      <header class="section-head">
+        <h2>Como trabalhamos</h2>
+        <p>Processo transparente, resultado consistente.</p>
+      </header>
+
+      <ol class="steps">
+        <li>
+          <span class="step-icon">1</span>
+          <div>
+            <h4>Check-in</h4>
+            <p>Recebemos seu veículo, alinhamos o serviço e tempo estimado.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-icon">2</span>
+          <div>
+            <h4>Pré-lavagem</h4>
+            <p>Remoção de sujeira pesada para evitar micro riscos.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-icon">3</span>
+          <div>
+            <h4>Lavagem & Detalhes</h4>
+            <p>Técnicas seguras, materiais premium e atenção aos detalhes.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-icon">4</span>
+          <div>
+            <h4>Inspeção final</h4>
+            <p>Conferência com o cliente e orientações de manutenção.</p>
+          </div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contact" class="contact">
-    <h2>Fale Conosco</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Seu Nome" required>
-      <input type="email" placeholder="Seu Email" required>
-      <textarea placeholder="Sua Mensagem" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
+  <!-- Galeria -->
+  <section class="section" id="galeria">
+    <div class="container">
+      <header class="section-head">
+        <h2>Resultados Doblof</h2>
+        <p>Alguns cliques do nosso dia a dia.</p>
+      </header>
+
+      <div class="gallery">
+        <img alt="Espuma cobrindo carro" src="https://images.unsplash.com/photo-1607863680179-76721642f4ac?q=80&w=1200&auto=format&fit=crop">
+        <img alt="Detalhe de roda limpa" src="https://images.unsplash.com/photo-1514315384763-ba401779410f?q=80&w=1200&auto=format&fit=crop">
+        <img alt="Painel interno limpo" src="https://images.unsplash.com/photo-1542365887-579f212f83f1?q=80&w=1200&auto=format&fit=crop">
+        <img alt="Carro polido brilhando" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop">
+        <img alt="Secagem com microfibra" src="https://images.unsplash.com/photo-1579488443207-509d7ce3a6b8?q=80&w=1200&auto=format&fit=crop">
+        <img alt="Espaço da lavação" src="https://images.unsplash.com/photo-1560364897-91548b21a7df?q=80&w=1200&auto=format&fit=crop">
+      </div>
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section class="section alt" id="planos">
+    <div class="container">
+      <header class="section-head">
+        <h2>Planos & pacotes</h2>
+        <p>Transparência total nos valores.</p>
+      </header>
+
+      <div class="grid plans">
+        <article class="plan">
+          <h3>Básico</h3>
+          <p class="plan-price">R$ 49</p>
+          <ul>
+            <li>Lavagem externa</li>
+            <li>Rodas & pneus</li>
+            <li>Secagem rápida</li>
+          </ul>
+          <a href="#agendar" class="btn btn-outline">Escolher</a>
+        </article>
+        <article class="plan featured">
+          <h3>Completo</h3>
+          <p class="plan-price">R$ 179</p>
+          <ul>
+            <li>Externa + interna</li>
+            <li>Hidratação de plásticos</li>
+            <li>Odorização premium</li>
+          </ul>
+          <a href="#agendar" class="btn btn-primary">Mais popular</a>
+        </article>
+        <article class="plan">
+          <h3>Premium</h3>
+          <p class="plan-price">R$ 349</p>
+          <ul>
+            <li>Detalhamento completo</li>
+            <li>Selante de pintura</li>
+            <li>Proteção UV</li>
+          </ul>
+          <a href="#agendar" class="btn btn-outline">Escolher</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section class="section" id="agendar">
+    <div class="container">
+      <header class="section-head">
+        <h2>Agende seu horário</h2>
+        <p>Selecione serviço, data e horário. Enviaremos confirmação pelo WhatsApp.</p>
+      </header>
+
+      <div class="grid booking">
+        <form class="form" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="whats">WhatsApp</label>
+            <input id="whats" name="whats" type="tel" placeholder="(11) 90000-0000" required />
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="placa">Placa do veículo</label>
+            <input id="placa" name="placa" type="text" placeholder="ABC-1234" maxlength="8" />
+          </div>
+
+          <div class="field">
+            <label for="tipo">Tipo de veículo</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Selecione</option>
+              <option>Sedan</option>
+              <option>Hatch</option>
+              <option>SUV</option>
+              <option>Pickup</option>
+              <option>Motocicleta</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="field">
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione</option>
+              <option>Lavagem Express</option>
+              <option>Higienização Interna</option>
+              <option>Detalhamento Premium</option>
+              <option>Completo</option>
+            </select>
+            <small class="error"></small>
+          </div>
+
+          <div class="field two">
+            <div>
+              <label for="data">Data</label>
+              <input id="data" name="data" type="date" required />
+              <small class="error"></small>
+            </div>
+            <div>
+              <label for="hora">Hora</label>
+              <input id="hora" name="hora" type="time" required />
+              <small class="error"></small>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="obs">Observações</label>
+            <textarea id="obs" name="obs" rows="3" placeholder="Ex.: precisa buscar o carro, remover cheiro de cigarro, etc."></textarea>
+          </div>
+
+          <div class="field checkbox">
+            <input id="aceite" type="checkbox" required />
+            <label for="aceite">Aceito os termos e política de agendamento.</label>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary btn-lg">Confirmar agendamento</button>
+            <button type="reset" class="btn btn-ghost">Limpar</button>
+          </div>
+        </form>
+
+        <aside class="agenda">
+          <h3>Agenda do dia</h3>
+          <p class="muted">Visualize rapidamente os horários já reservados.</p>
+          <div class="agenda-wrap">
+            <table id="agendaTabela" aria-live="polite">
+              <thead>
+                <tr>
+                  <th>Hora</th>
+                  <th>Cliente</th>
+                  <th>Serviço</th>
+                  <th>Veículo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- linhas carregadas via JS -->
+              </tbody>
+            </table>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização / Contato -->
+  <section class="section alt" id="contato">
+    <div class="container contact">
+      <div>
+        <h2>Fale com a Doblof</h2>
+        <p>Tem dúvidas? Chame no WhatsApp ou visite nossa unidade.</p>
+        <ul class="contact-list">
+          <li><strong>Endereço:</strong> Rua Exemplo, 123 — Centro</li>
+          <li><strong>Horário:</strong> Seg–Sáb, 8h às 18h</li>
+          <li><strong>WhatsApp:</strong> (11) 90000-0000</li>
+        </ul>
+        <a class="btn btn-outline" href="#agendar">Agendar agora</a>
+      </div>
+      <iframe title="Mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.820116432801!2d-46.6559818!3d-23.5755692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c9073a6a15%3A0x2f2b364a7b0f4b5a!2sPaulista!5e0!3m2!1spt-BR!2sBR!4v1689876543210"></iframe>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 DobloF - Todos os direitos reservados</p>
+    <div class="container footer-grid">
+      <div class="brand-col">
+        <a class="brand" href="#top">
+          <span class="brand-logo" aria-hidden="true">🚗</span>
+          <span class="brand-text">Doblof</span>
+        </a>
+        <p class="muted">Qualidade que você vê. Praticidade que você sente.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="#servicos">Serviços</a>
+        <a href="#como">Como trabalhamos</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#planos">Planos</a>
+        <a href="#agendar">Agendar</a>
+      </nav>
+      <div class="newsletter">
+        <form id="newsletterForm">
+          <label for="emailNews">Receba promoções</label>
+          <div class="newsletter-row">
+            <input id="emailNews" type="email" placeholder="seu@email.com" required />
+            <button class="btn btn-primary" type="submit">Assinar</button>
+          </div>
+          <small class="muted">Sem spam. Cancelamento a qualquer momento.</small>
+        </form>
+      </div>
+    </div>
+    <div class="copy">© <span id="year"></span> Doblof. Todos os direitos reservados.</div>
   </footer>
+
+  <!-- Modal de sucesso -->
+  <dialog id="successModal" class="modal">
+    <div class="modal-card">
+      <h3>Agendamento confirmado ✅</h3>
+      <p id="successText">Seu horário foi reservado com sucesso.</p>
+      <div class="modal-actions">
+        <button id="modalFechar" class="btn btn-ghost">Fechar</button>
+        <a id="modalWhats" class="btn btn-primary" target="_blank" rel="noopener">Enviar no WhatsApp</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a class="fab-whats" id="fabWhats" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">🟢</a>
 
   <script src="script.js"></script>
 </body>
 </html>
-
