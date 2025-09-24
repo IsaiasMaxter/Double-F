@@ -130,7 +130,7 @@ img{max-width:100%;display:block;border-radius:14px}
 .form{display:grid; gap:12px; background: rgba(17,24,39,.7); padding:18px; border-radius: var(--radius); border:1px solid rgba(255,255,255,.06); box-shadow: var(--shadow)}
 .field{display:grid; gap:8px}
 .field.two{grid-template-columns: 1fr 1fr; gap:12px}
-.field.checkbox{display:flex; align-items:center; gap:10px}
+.field.checkbox{display:flex; align-items:right; gap:10px}
 .field label{font-weight:600}
 .field input, .field select, .field textarea{
   width:100%; padding:12px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.12);
