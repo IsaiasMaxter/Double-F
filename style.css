@@ -46,7 +46,23 @@ img{max-width:100%;display:block;border-radius:14px}
 .menu a:hover{color:#fff}
 .hamburger{display:none; background:none; border:0; cursor:pointer}
 .hamburger span{display:block; width:26px; height:2px; background:#cbd5e1; margin:6px 0; border-radius:2px}
+.logo {
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  transition: transform .25s ease, filter .25s ease;
+}
 
+.logo:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
 /* Buttons */
 .btn{
   display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
