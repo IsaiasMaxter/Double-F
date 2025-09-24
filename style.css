@@ -77,14 +77,16 @@ img{max-width:100%;display:block;border-radius:14px}
 .hero-media figcaption{color:var(--muted); font-size:.85rem; margin-top:6px}
 .gradient{background: linear-gradient(90deg, var(--primary), #a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent}
 
-/* Cards */
+
 .cards{grid-template-columns: repeat(3, 1fr)}
 .card{background: rgba(17,24,39,.7); border: 1px solid rgba(255,255,255,.06); border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow)}
 .card-body{padding:16px}
 .card h3{margin:0 0 6px}
 .card p{margin:0 0 10px; color:#cbd5e1}
 .list{margin:0 0 12px 16px; color:#aab3c5}
-.price{font-weight:800; font-size:1.1rem; background:linear-gradient(90deg,var(--primary),#a78bfa); -webkit-background-clip:text; color:transparent}
+.price{font-weight:800; font-size:1.1rem; margin-bottom: 10px;background:linear-gradient(90deg,var(--primary),#a78bfa); -webkit-background-clip:text; color:transparent
+  
+} 
 
 /* Steps */
 .steps{display:grid; grid-template-columns: 1fr 1fr; gap:16px; counter-reset: step}
