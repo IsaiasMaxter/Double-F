@@ -104,34 +104,57 @@ img{max-width:100%;display:block;border-radius:14px}
 .list{margin:0 0 12px 16px; color:#aab3c5}
 .price{font-weight:800; font-size:1.1rem; margin-bottom: 10px;background:linear-gradient(90deg,var(--primary),#a78bfa); -webkit-background-clip:text; color:transparent} 
 
-/* Steps */
-.steps {
+/* ===== Steps (substitua as regras antigas por estas) ===== */
+.steps{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   counter-reset: step;
 }
 
-.steps li {
+.steps li{
   list-style: none;
   display: flex;
-  gap: 12px;
-  align-items: center; /* CORRIGIDO: estava flex-start */
+  gap: 14px;
+  align-items: flex-start; /* alinha pelo topo do bloco (titulo em cima) */
   padding: 16px;
   background: rgba(17,24,39,.6);
   border: 1px solid rgba(255,255,255,.06);
   border-radius: 14px;
 }
 
-.step-icon {
+/* Garante que o conteúdo à direita possa quebrar corretamente */
+.steps li > div {
+  min-width: 0;
+}
+
+/* Remove margens padrão do titulo e ajusta espaçamento */
+.steps li h4{
+  margin: 0 0 8px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Parágrafo com espaçamento e cor suave */
+.steps li p{
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Ícone / bolinha numerada */
+.step-icon{
   display: inline-grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
   background: linear-gradient(135deg, var(--primary), var(--primary-2));
   color: #00131a;
   font-weight: 800;
+  align-self: flex-start;   /* fixa no topo do item */
+  margin-top: 6px;          /* ajuste fino: mude esse valor conforme necessidade */
+  flex-shrink: 0;
 }
 
 /* Gallery */
