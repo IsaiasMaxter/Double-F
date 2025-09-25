@@ -105,9 +105,34 @@ img{max-width:100%;display:block;border-radius:14px}
 .price{font-weight:800; font-size:1.1rem; margin-bottom: 10px;background:linear-gradient(90deg,var(--primary),#a78bfa); -webkit-background-clip:text; color:transparent} 
 
 /* Steps */
-.steps{display:grid; grid-template-columns: 1fr 1fr; gap:16px; counter-reset: step}
-.steps li{list-style:none; display:flex; gap:12px; align-items:flex-start; padding:16px; background: rgba(17,24,39,.6); border:1px solid rgba(255,255,255,.06); border-radius:14px}
-.step-icon{display:inline-grid; place-items:center; width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg, var(--primary), var(--primary-2)); color:#00131a; font-weight:800}
+.steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  counter-reset: step;
+}
+
+.steps li {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  align-items: center; /* CORRIGIDO: estava flex-start */
+  padding: 16px;
+  background: rgba(17,24,39,.6);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: 14px;
+}
+
+.step-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #00131a;
+  font-weight: 800;
+}
 
 /* Gallery */
 .gallery{display:grid; grid-template-columns: repeat(3, 1fr); gap:10px}
