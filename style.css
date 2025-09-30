@@ -189,9 +189,17 @@ img{max-width:100%;display:block;border-radius:14px}
 
 /* Floating WhatsApp */
 .fab-whats{
-  position:fixed; right:18px; bottom:18px; width:56px; height:56px; display:grid; place-items:center;
-  border-radius:50%; background: radial-gradient(circle at 30% 30%, #25d366, #128c7e); color:#fff; text-decoration:none;
-  font-weight:900; box-shadow: 0 10px 25px rgba(0,0,0,.35);
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: inline-block;
+}
+.fab-whats img.whatsapp-icone {
+  width: 56px;   /* mesmo tamanho que o botão antigo */
+  height: 56px;
+  border-radius: 50%; /* arredondado */
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
+  object-fit: cover;
 }
 
 /* Responsive */
